@@ -21,14 +21,10 @@ namespace ComptaChim
             EntreeEntrep = entreeEntrep;
         }
 
-        public virtual string GetTypeEmploye()
-        {
-            return "L'employé ";
-        }
         public abstract double CalculerSalaire();
-        public string GetNom()
+        public virtual string GetNom()
         {
-            return string.Concat(GetTypeEmploye(), Nom, " ", Prenom);
+            return string.Concat(Constants.TITLES_EMPLOYES[GetType()], Nom, " ", Prenom);
         }
     }
 }

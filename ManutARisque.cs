@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace ComptaChim
 {
-    public class ManutARisque : Manutentionnaire
+    public class ManutARisque : EmployeARisque
     {
-        public ManutARisque(string nom, string prenom, int age, string entreeEntrep, int heures) : base(nom, prenom, age, entreeEntrep,heures)
+        public ManutARisque(string nom, string prenom, int age, string entreeEntrep, int heures) : base(new Manutentionnaire(nom, prenom, age, entreeEntrep,heures))
         {
-        }
-
-        public override double CalculerSalaire()
-        {
-            return base.CalculerSalaire() + EmployeARisque.PRIME_DE_RISQUE;
         }
     }
 }

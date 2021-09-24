@@ -8,7 +8,6 @@ namespace ComptaChim
 {
     public class Manutentionnaire : Employe
     {
-        const int SALAIREHORAIRE = 65;
         public int Heures { get; }
         public Manutentionnaire(string nom, string prenom, int age, string entreeEntrep, int heures) : base(nom, prenom, age, entreeEntrep)
         {
@@ -17,12 +16,7 @@ namespace ComptaChim
 
         public override double CalculerSalaire()
         {
-            return Heures * SALAIREHORAIRE;
-        }
-
-        public override string GetTypeEmploye()
-        {
-            return "Le manut. ";
+            return Heures * Constants.SALAIRE_HORAIRE_MANUT;
         }
     }
 }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commercial.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Employe.cs" />
     <Compile Include="EmployeARisque.cs" />
     <Compile Include="ManutARisque.cs" />

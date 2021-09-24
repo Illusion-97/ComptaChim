@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace ComptaChim
 {
-    public class TechnARisque : Technicien
+    public class TechnARisque : EmployeARisque
     {
-        public TechnARisque(string nom, string prenom, int age, string entreeEntrep, int unitProd) : base(nom, prenom, age, entreeEntrep,unitProd)
+        public TechnARisque(string nom, string prenom, int age, string entreeEntrep, int unitProd) : base(new Technicien(nom, prenom, age, entreeEntrep, unitProd))
         {
-        }
-
-        public override double CalculerSalaire()
-        {
-            return base.CalculerSalaire() + EmployeARisque.PRIME_DE_RISQUE;
         }
     }
 }
