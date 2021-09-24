@@ -8,14 +8,13 @@ namespace ComptaChim
 {
     public class TechnARisque : Technicien
     {
-        const int PRIMEDERISQUE = 200;
         public TechnARisque(string nom, string prenom, int age, string entreeEntrep, int unitProd) : base(nom, prenom, age, entreeEntrep,unitProd)
         {
         }
 
         public override double CalculerSalaire()
         {
-            return base.CalculerSalaire() + PRIMEDERISQUE;
+            return base.CalculerSalaire() + EmployeARisque.PRIME_DE_RISQUE;
         }
     }
 }

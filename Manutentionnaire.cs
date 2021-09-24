@@ -9,15 +9,15 @@ namespace ComptaChim
     public class Manutentionnaire : Employe
     {
         const int SALAIREHORAIRE = 65;
-        private int heures { get; }
+        public int Heures { get; }
         public Manutentionnaire(string nom, string prenom, int age, string entreeEntrep, int heures) : base(nom, prenom, age, entreeEntrep)
         {
-            this.heures = heures;
+            Heures = heures;
         }
 
         public override double CalculerSalaire()
         {
-            return heures * SALAIREHORAIRE;
+            return Heures * SALAIREHORAIRE;
         }
 
         public override string GetTypeEmploye()

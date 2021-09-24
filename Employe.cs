@@ -8,17 +8,17 @@ namespace ComptaChim
 {
     public abstract class Employe
     {
-        internal string nom { get; set; }
-        internal string prenom { get; set; }
-        internal int age { get; set; }
-        internal string entreeEntrep { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public int Age { get; set; }
+        public string EntreeEntrep { get; set; }
 
         protected Employe(string nom, string prenom, int age, string entreeEntrep)
         {
-            this.nom = nom;
-            this.prenom = prenom;
-            this.age = age;
-            this.entreeEntrep = entreeEntrep;
+            Nom = nom;
+            Prenom = prenom;
+            Age = age;
+            EntreeEntrep = entreeEntrep;
         }
 
         public virtual string GetTypeEmploye()
@@ -28,7 +28,7 @@ namespace ComptaChim
         public abstract double CalculerSalaire();
         public string GetNom()
         {
-            return string.Concat(GetTypeEmploye(), nom, " ", prenom);
+            return string.Concat(GetTypeEmploye(), Nom, " ", Prenom);
         }
     }
 }

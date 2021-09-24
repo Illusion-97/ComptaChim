@@ -8,14 +8,13 @@ namespace ComptaChim
 {
     public class ManutARisque : Manutentionnaire
     {
-        const int PRIMEDERISQUE = 200;
         public ManutARisque(string nom, string prenom, int age, string entreeEntrep, int heures) : base(nom, prenom, age, entreeEntrep,heures)
         {
         }
 
         public override double CalculerSalaire()
         {
-            return base.CalculerSalaire() + PRIMEDERISQUE;
+            return base.CalculerSalaire() + EmployeARisque.PRIME_DE_RISQUE;
         }
     }
 }

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ComptaChim
 {
-    public class Representant : Vendeur
+    public class Representant : Commercial
     {
         public Representant(string nom, string prenom, int age, string entreeEntrep, int CA) : base(nom, prenom, age, entreeEntrep,CA)
         {
-            bonus = 800;
+            Bonus = 800;
         }
 
         public override double CalculerSalaire()
         {
-            return CA * COEFCA + bonus;
+            return CA * Commercial.COEF + Bonus;
         }
 
         public override string GetTypeEmploye()

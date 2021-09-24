@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commercial.cs" />
     <Compile Include="Employe.cs" />
+    <Compile Include="EmployeARisque.cs" />
     <Compile Include="ManutARisque.cs" />
     <Compile Include="Manutentionnaire.cs" />
     <Compile Include="Personnel.cs" />

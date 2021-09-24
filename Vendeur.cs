@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace ComptaChim
 {
-    public class Vendeur : Employe
+    public class Vendeur : Commercial
     {
-        internal const double COEFCA = 0.2;
-        internal int bonus = 400;
-        internal int CA { get; }
-        public Vendeur(string nom, string prenom, int age, string entreeEntrep,int CA) : base(nom, prenom, age, entreeEntrep)
+        public Vendeur(string nom, string prenom, int age, string entreeEntrep,int CA) : base(nom, prenom, age, entreeEntrep,CA)
         {
-            this.CA = CA;
+            Bonus = 400;
         }
 
         public override double CalculerSalaire()
         {
-            return CA * COEFCA + bonus;
+            return CA * Commercial.COEF + Bonus;
         }
 
         public override string GetTypeEmploye()

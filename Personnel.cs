@@ -10,15 +10,15 @@ namespace ComptaChim
     {
         List<Employe> employes = new List<Employe>();
 
-        public void ajouterEmploye(Employe e) { employes.Add(e); }
-        public void afficherSalaires()
+        public void AjouterEmploye(Employe e) { employes.Add(e); }
+        public void AfficherSalaires()
         {
             foreach (Employe e in employes)
             {
                 Console.WriteLine("{0} gagne {1} Euros.",e.GetNom(),e.CalculerSalaire());
             }
         }
-        public double salaireMoyen()
+        public double SalaireMoyen()
         {
             double total = 0;
             if (employes.Count > 0)
