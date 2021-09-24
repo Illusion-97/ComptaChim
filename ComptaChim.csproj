@@ -43,9 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employe.cs" />
+    <Compile Include="ManutARisque.cs" />
+    <Compile Include="Manutentionnaire.cs" />
     <Compile Include="Personnel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Representant.cs" />
+    <Compile Include="TechnARisque.cs" />
+    <Compile Include="Technicien.cs" />
+    <Compile Include="Vendeur.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
