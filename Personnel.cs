@@ -8,10 +8,10 @@ namespace ComptaChim
 {
     public abstract class Employe
     {
-        public string nom { get; set; }
-        public string prenom { get; set; }
-        public int age { get; set; }
-        public string entreeEntrep { get; set; }
+        internal string nom { get; set; }
+        internal string prenom { get; set; }
+        internal int age { get; set; }
+        internal string entreeEntrep { get; set; }
 
         protected Employe(string nom, string prenom, int age, string entreeEntrep)
         {
